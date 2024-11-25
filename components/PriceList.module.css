@@ -1,0 +1,42 @@
+.priceListSection {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.priceTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 1rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.priceTable th,
+.priceTable td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.priceTable th {
+    background-color: #ff7e5f;
+    color: #fff;
+    font-weight: 600;
+    text-align: left;
+}
+
+.priceTable td {
+    color: #555;
+}
+
+.priceTable tr:nth-child(even) {
+    background-color: #f5f5f5;
+}

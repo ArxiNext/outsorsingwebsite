@@ -1,0 +1,86 @@
+/* components/ServiceDeskServices.module.css */
+.services {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.serviceList {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Два столбца */
+    gap: 30px;
+    padding: 0 20px;
+    max-width: 100%; /* Убираем ограничение по максимальной ширине */
+}
+
+.serviceItem {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 5px;
+    border-left: 5px solid #ff7e5f;
+    border-right: 5px solid #ff7e5f;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    width: 95%;
+}
+
+.serviceItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.serviceTitle {
+    font-size: 1.75em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff7e5f;
+    padding-bottom: 5px;
+}
+
+.serviceDescription {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 0px;
+}
+
+/* Адаптивность */
+@media screen and (max-width: 1024px) {
+    .serviceList {
+        grid-template-columns: 1fr 1fr; /* Два столбца на средних экранах */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .serviceList {
+        grid-template-columns: 1fr; /* Один столбец на мобильных устройствах */
+        padding: 0 20px;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+
+    .serviceTitle {
+        font-size: 1.5em;
+    }
+
+    .serviceDescription {
+        font-size: 1em;
+    }
+}

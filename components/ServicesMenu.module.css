@@ -1,0 +1,57 @@
+/* Стиль контейнера для меню */
+.menuContainer {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Кнопка для открытия меню */
+  .menuButton {
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menuButton:hover {
+    background-color: #feb47b;
+  }
+  
+  /* Стили для выпадающего меню */
+  .dropdownMenu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+    margin-top: 5px;
+    padding: 10px 0;
+    list-style: none;
+  }
+  
+  .menuItem {
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menuItem:hover {
+    background-color: #f0f0f0;
+    color: #ff7e5f;
+  }
+  
+  /* Закрытие меню при клике за его пределами */
+  .menuContainer:hover .dropdownMenu {
+    display: block;
+  }
+  

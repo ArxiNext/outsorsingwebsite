@@ -1,0 +1,24 @@
+.scrollToTop {
+    position: fixed;
+    bottom: 80px; /* Достаточно места для кнопки WhatsApp */
+    right: 20px;
+    padding: 10px;
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    border-radius: 50%; /* Делает кнопку круглой */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .scrollToTop:hover {
+    background-color: #005bb5;
+  }
+  
+  .scrollToTop svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+  }
+  

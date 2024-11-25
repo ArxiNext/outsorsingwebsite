@@ -1,0 +1,165 @@
+/* General Container Styles */
+.container {
+  margin: 0 auto;
+}
+
+/* Hero Section Styles */
+.heroSection {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  color: white;
+  margin-bottom: 40px;
+}
+
+.heroTitle {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.heroSubtitle {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.ctaButton {
+  background-color: #ff7e5f;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #feb47b;
+  transform: translateY(-3px);
+}
+
+/* Services Section Styles */
+.servicesSection {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.sectionTitle {
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.serviceList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.serviceItem {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.serviceItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.serviceItem h3 {
+  font-size: 1.5em;
+  margin: 15px 0 10px;
+  color: #333;
+}
+
+.serviceItem p {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Benefits Section Styles */
+.benefitsSection {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.benefitsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.benefitItem {
+  text-align: center;
+  background: #f7f9fc;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #eaeaea;
+}
+
+.benefitItem p {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #555;
+}
+
+/* CTA Section Styles */
+.ctaSection {
+  text-align: center;
+  padding: 40px 20px;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.ctaTitle {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.ctaSection p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+.serviceList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .heroTitle {
+      font-size: 2em;
+  }
+
+  .sectionTitle {
+      font-size: 1.8em;
+  }
+
+  .ctaTitle {
+      font-size: 1.8em;
+  }
+}
