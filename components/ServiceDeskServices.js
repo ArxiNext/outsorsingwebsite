@@ -1,5 +1,5 @@
 // components/ServiceDeskServices.js
-import styles from './ServiceDeskServices.module.css';
+import styles from '../styles/ServiceDeskServices.module.css';
 
 export default function ServiceDeskServices() {
     return (

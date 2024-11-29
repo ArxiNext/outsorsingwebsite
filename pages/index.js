@@ -31,8 +31,6 @@ export default function Home() {
                     <div className="consult">  
                         <p>Есть вопросы или проблемы? Позвоните нам по номеру
                               или напишите нам  — мы ответим в удобное для вас время! Всё быстро и легко – мы здесь, чтобы помочь вам! <br /> </p>
-                              <p><i>📞<a href="tel:+77077077007">87077077007</a></i> <br/>или <br/> <Image src="/whatsapp.png" alt="WhatsApp" width={20} height={20} /><i><a href="https://wa.me/1234567890">WhatsApp</a></i> </p>
-                             
                     </div>    
                         <div className='bigLexa'>
                             <div className='textLexa'>

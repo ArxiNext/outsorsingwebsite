@@ -1,5 +1,5 @@
 // components/PricingList.js
-import styles from './PricingListServerDesk.module.css';
+import styles from '../styles/PricingListServerDesk.module.css';
 
 
 

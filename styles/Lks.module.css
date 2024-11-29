@@ -7,7 +7,7 @@
 .heroSection {
   text-align: center;
   padding: 60px 20px;
-  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  background: linear-gradient(to right, #434343, #000000);
   color: white;
   margin-bottom: 40px;
 }
@@ -35,10 +35,7 @@
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.ctaButton:hover {
-  background-color: #feb47b;
-  transform: translateY(-3px);
-}
+
 
 /* Services Section Styles */
 .servicesSection {

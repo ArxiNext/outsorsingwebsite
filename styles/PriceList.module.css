@@ -27,16 +27,16 @@
 }
 
 .priceTable th {
-    background-color: #ff7e5f;
+    background:  #000000;
     color: #fff;
     font-weight: 600;
     text-align: left;
 }
 
 .priceTable td {
-    color: #555;
+    color: #000000;
 }
 
 .priceTable tr:nth-child(even) {
-    background-color: #f5f5f5;
+    background-color: #ffffff;
 }

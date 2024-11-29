@@ -1,7 +1,7 @@
 // components/SocialLinks.js
 
 import Image from 'next/image';
-import styles from './SocialLinks.module.css';
+import styles from '../styles/SocialLinks.module.css';
 
 const socialMedia = [
 
@@ -16,10 +16,9 @@ const socialMedia = [
     icon: '/icons/telegram.svg',
   },
   {
-    name: 'Vk',
-    description: 'OUR STENA',
+    name: 'Наш Whatsapp',
     url: 'https://vk.com/your-profile',
-    icon: '/icons/vk.svg',
+    icon: '/icons/whatsapp.svg',
   },
 ];
 
@@ -34,7 +33,7 @@ const SocialLinks = () => {
           rel="noopener noreferrer"
           className={styles.socialLink}
         >
-          <Image src={social.icon} alt={social.name} width={20} height={20} />
+          <Image src={social.icon} alt={social.name} width={30} height={30} />
           <span className={styles.socialText}>{social.name}</span>
         </a>
       ))}

@@ -13,7 +13,7 @@
     align-items: center;
     gap: 10px; /* Расстояние между иконкой и текстом */
     text-decoration: none; /* Убираем подчеркивание */
-    color: #333; /* Цвет текста */
+    color: #000000; /* Цвет текста */
     transition: transform 0.2s ease;
   }
   

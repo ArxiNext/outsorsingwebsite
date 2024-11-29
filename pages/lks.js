@@ -1,7 +1,7 @@
 // components/LKSPage.js
 import Image from 'next/image';
 import Footer from '../components/Footer';
-import styles from '../components/Lks.module.css';
+import styles from '../styles/Lks.module.css';
 import Header from '../components/Header';
 import Head from 'next/head';
 import LksTextContent from '../components/LksTextContent';

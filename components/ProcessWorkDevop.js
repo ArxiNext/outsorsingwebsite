@@ -1,4 +1,4 @@
-import styles from './ProcessWorkDevop.module.css';
+import styles from '../styles/ProcessWorkDevop.module.css';
 
 export default function ProcessWorkDevop() {
   return (

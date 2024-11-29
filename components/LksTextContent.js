@@ -1,4 +1,4 @@
-import styles from '../components/LksPageContent.module.css';
+import styles from '../styles/LksPageContent.module.css';
 
 export default function LksTextContent() {
   return (

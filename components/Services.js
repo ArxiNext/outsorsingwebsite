@@ -54,7 +54,7 @@ export default ServiceList;*/
 // pages/service.js
 
 import Link from 'next/link';
-import styles from './Service.module.css';
+import styles from '../styles/Service.module.css';
 
 const services = [
   { title: 'Разработка сайтов', description: 'Создаем быстрые, удобные сайты с использованием React, Next.js и CMS. Оптимизируем для SEO и быстрой загрузки, чтобы ваш сайт привлекал клиентов и работал без задержек.',icon: "/icons/development.svg", link: '/devops' },

@@ -1,6 +1,6 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import styles from '../components/ServiceDesk.module.css';
+import styles from '../styles/ServiceDesk.module.css';
 import PricingListServerDesk from '../components/PricingListServerDesk';
 
 import Head from 'next/head';
@@ -31,7 +31,6 @@ export default function ServiceDesk() {
         Благодаря нашему Service Desk, ваши сотрудники могут сосредоточиться на задачах, которые важны для вашего роста и развития, 
         в то время как мы обеспечиваем стабильность IT-систем.
     </p>
-    <button className={styles.ctaButton}>Связаться с нами</button>
 </section>
 
 

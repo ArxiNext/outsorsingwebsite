@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import styles from './ServicesMenu.module.css';
+import styles from '../styles/ServicesMenu.module.css';
 
 const ServicesMenu = () => {
   const [isOpen, setIsOpen] = useState(false);

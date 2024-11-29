@@ -1,4 +1,4 @@
-import styles from './PriceList.module.css';
+import styles from '../styles/PriceList.module.css';
 
 export default function PriceList() {
     const services = [

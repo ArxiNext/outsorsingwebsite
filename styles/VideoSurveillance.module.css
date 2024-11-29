@@ -1,0 +1,190 @@
+/* Основные стили */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(to right, #434343, #000000);
+    color: white;
+    height: 50vh;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in;
+}
+
+.hero p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.hero .subDescription {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #f8f8f8;
+}
+
+.ctaButton {
+    background-color: #ff7e5f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.2em;
+}
+
+.ctaButton:hover {
+    background-color: #feb47b;
+}
+
+/* Карточки */
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    padding: 15px;
+    border: 1px solid #eaeaea;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.6s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.card p {
+    margin-top: 5px;
+    color: #000000;
+}
+
+/* Дополнительные секции */
+.benefits,
+.howItWorks,
+.finalCta {
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Шаги */
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.step {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInStep 0.5s ease-in-out;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInStep {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p,
+    .hero .subDescription {
+        font-size: 0.9em;
+    }
+
+    .ctaButton {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+
+    .cardGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .hero p,
+    .hero .subDescription {
+        font-size: 0.8em;
+    }
+
+    .ctaButton {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .card h3 {
+        font-size: 1em;
+    }
+}

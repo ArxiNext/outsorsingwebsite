@@ -1,0 +1,120 @@
+.contactContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 140px;
+  gap: 20px; /* Увеличен отступ для лучшей читаемости */
+  margin-bottom: 35px;
+  flex-wrap: wrap; /* Добавлено для мобильной адаптации */
+}
+
+.title {
+  text-align: center;
+  font-size: 1.8em; /* Увеличен размер для акцента */
+  margin-bottom: 20px;
+}
+
+.contactInfoContainer {
+  flex: 1;
+  min-width: 280px; /* Минимальная ширина для мобильных */
+}
+
+.contactList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.2s ease;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.contactItem a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease; /* Добавлен эффект при наведении */
+}
+
+.contactItem a:hover {
+  color: #ff7e5f; /* Изменение цвета при наведении */
+}
+
+.contactItem span {
+  font-weight: bold;
+}
+
+.socialLinks {
+  margin-top: 20px;
+}
+
+.workingHours {
+  flex: 1;
+  min-width: 280px; /* Минимальная ширина для таблицы */
+}
+
+.hoursTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.hoursTable th, .hoursTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  font-size: 0.9em; /* Уменьшен размер текста для компактности */
+}
+
+.hoursTable th {
+  background-color: #000;
+  color: #fff;
+  font-size: 1em;
+}
+
+.hoursTable td {
+  color: #333;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .contactContainer {
+      flex-direction: column; /* Размещаем элементы друг под другом */
+      padding: 0 20px; /* Уменьшаем отступы */
+      gap: 15px;
+  }
+
+  .contactInfoContainer, .workingHours {
+      flex: none;
+      width: 100%; /* Элементы занимают всю ширину */
+  }
+
+  .hoursTable th, .hoursTable td {
+      font-size: 0.8em; /* Уменьшен текст для мобильных устройств */
+  }
+
+  .title {
+      font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactItem {
+      flex-direction: column; /* Иконка и текст размещаются вертикально */
+      align-items: flex-start;
+  }
+
+  .contactItem a {
+      gap: 5px; /* Уменьшен отступ между иконкой и текстом */
+      font-size: 0.9em; /* Уменьшен размер текста */
+  }
+
+  .hoursTable th, .hoursTable td {
+      padding: 6px; /* Уменьшены отступы внутри ячеек */
+  }
+}

@@ -1,7 +1,8 @@
 // components/Contact.js
 import SocialLinks from './SocialLinks';
-import styles from './Contact.module.css';
+import styles from '../styles/Contact.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Contact() {
   return (
@@ -11,12 +12,17 @@ export default function Contact() {
         <p className={styles.contactInfo}>Вы можете связаться с нами</p>
         <ul className={styles.contactList}>
           <li className={styles.contactItem}>
-            <Image src="/icons/email.svg" alt="Email" className={styles.icon} width={20} height={20} />
-            <span>info@example.com</span>
+            <Link href="mailto:info@prosafe.com"><Image  src="/icons/email.svg" alt="Email" className={styles.icon} width={30} height={30} />
+            <span>info@example.com</span></Link>
           </li>
-          <li className={styles.contactItem}>
-            <Image src="/icons/phone.svg" alt="Телефон" className={styles.icon} width={20} height={20} />
-            <span>+7 (123) 456-78-90</span>
+          <li className={styles.contactItem}><Link href="tel:+77073172855">
+            <Image src="/icons/phone.svg" alt="Телефон" className={styles.icon} width={30} height={30} />
+            <span>+7 (707) 317-28-55</span></Link>
+          </li>
+          <li className={styles.contactItem}><Link href="https://wa.me/77073172855" target="_blank" rel="noopener noreferrer">
+            <Image src="/icons/whatsapp.svg" alt="Телефон" className={styles.icon} width={30} height={30} />
+            <span>+7 (707) 317-28-55</span>
+            </Link>
           </li>
         </ul>
         <div className={styles.socialLinks}>
@@ -60,7 +66,7 @@ export default function Contact() {
             </tr>
             <tr>
               <td>Воскресенье</td>
-              <td>Выходной</td>
+              <td>Выезд дежурного</td>
             </tr>
           </tbody>
         </table>

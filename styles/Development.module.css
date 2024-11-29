@@ -1,0 +1,144 @@
+/* Общие стили для hero-секции */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #434343, #000000);
+    color: white;
+}
+
+/* Блоки с контентом */
+.benefits, .workProcess, .testimonials, .finalCta {
+    padding: 40px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Кнопка CTA */
+.ctaButton {
+    background-color: #ff7e5f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.2em;
+}
+
+.ctaButton:hover {
+    background-color: #ff6b4f;
+}
+
+/* Карточки */
+.card {
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    text-align: center;
+    flex-basis: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Заголовки */
+.title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+/* Финальный CTA */
+.finalCta {
+    text-align: center;
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Блок с услугами и выгодами */
+.servicesBenefits {
+    padding: 20px;
+    animation: fadeIn 0.7s ease-in;
+}
+
+/* Сеточный макет для карточек */
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    /* Уменьшаем padding для hero-секции */
+    .hero {
+        padding: 40px 20px;
+    }
+
+    /* Уменьшаем размер шрифта в заголовке */
+    .title {
+        font-size: 2em;
+    }
+
+    /* Уменьшаем размер шрифта кнопки CTA */
+    .ctaButton {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+
+    /* Карточки в одну колонку на мобильных */
+    .cardGrid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Уменьшаем padding и margin для блока с контентом */
+    .benefits, .workProcess, .testimonials, .finalCta {
+        padding: 20px;
+        margin: 10px 0;
+    }
+
+    /* Уменьшаем padding в блоках с услугами */
+    .servicesBenefits {
+        padding: 15px;
+    }
+}
+
+/* Очень маленькие экраны */
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.8em;
+    }
+
+    .ctaButton {
+        font-size: 0.9em;
+        padding: 6px 12px;
+    }
+}

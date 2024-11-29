@@ -1,6 +1,6 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import styles from '../components/VideoSurveillance.module.css';
+import styles from '../styles/VideoSurveillance.module.css';
 import Head from 'next/head';
 import Image from 'next/image';
 import PriceList from '../components/PriceListVideo';
