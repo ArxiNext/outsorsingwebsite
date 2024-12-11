@@ -66,11 +66,6 @@ const Header = () => {
               </ul>
             )}
           </li>
-          <li>
-            <Link href="#contact" className={styles.navLink}>
-              Контакты
-            </Link>
-          </li>
         </ul>
       </nav>
       {/* Контакты */}
@@ -97,7 +92,7 @@ const Header = () => {
             <FaTelegramPlane size={24} />
           </a>
           <a
-           href="https://wa.me/+77073172855" target="_blank" rel="noopener noreferrer"
+            href="https://whatsapp.com"
             className={styles["social-icon"]}
             aria-label="WhatsApp"
           >

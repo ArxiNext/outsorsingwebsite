@@ -2,9 +2,10 @@
 import Image from 'next/image';
 import Footer from '../components/Footer';
 import styles from '../styles/Lks.module.css';
-import Header from '../components/Header';
+import Header from '../components/Header2';
 import Head from 'next/head';
 import LksTextContent from '../components/LksTextContent';
+import Link from 'next/link';
 
 export default function LKSPage() {
   return (
@@ -29,7 +30,7 @@ export default function LKSPage() {
       <section className={styles.heroSection}>
         <h1 className={styles.heroTitle}>Услуги по установке и настройке локальных компьютерных сетей (ЛКС)</h1>
         <p className={styles.heroSubtitle}>Комплексные услуги по проектированию, установке и настройке ЛКС для бизнеса и дома</p>
-        <button className={styles.ctaButton}>Заказать услугу</button>
+        <Link href="https://wa.me/+77073172855" target="_blank" rel="noopener noreferrer"> <button className={styles.ctaButton}>Заказать услугу </button></Link>
       </section>
 
       {/* Service Overview Section */}

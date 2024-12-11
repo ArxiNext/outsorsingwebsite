@@ -32,6 +32,10 @@
   gap: 10px;
   margin-bottom: 10px;
 }
+.contactItem span{
+  margin: 0 10px;
+}
+
 
 .contactItem a {
   text-decoration: none;
@@ -42,12 +46,10 @@
 }
 
 .contactItem a:hover {
+  transform: scale(1.05);
   color: #ff7e5f; /* Изменение цвета при наведении */
 }
 
-.contactItem span {
-  font-weight: bold;
-}
 
 .socialLinks {
   margin-top: 20px;

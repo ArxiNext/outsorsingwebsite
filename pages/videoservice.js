@@ -1,10 +1,11 @@
-import Header from '../components/Header';
+import Header from '../components/Header2';
 import Footer from '../components/Footer';
 import styles from '../styles/VideoSurveillance.module.css';
 import Head from 'next/head';
 import Image from 'next/image';
 import PriceList from '../components/PriceListVideo';
 import ProcessWorkDevop from '../components/ProcessWorkDevop';
+import Link from 'next/link';
 
 export default function VideoSurveillance() {
     return (
@@ -22,7 +23,7 @@ export default function VideoSurveillance() {
                         <strong>Комплексные решения по обеспечению безопасности для вашего бизнеса и частных объектов!</strong><br />
                         Наша компания предлагает профессиональные услуги по установке и настройке систем видеонаблюдения с высококачественными камерами и оборудованием для надежного контроля территории.
                     </p>
-                    <button className={styles.ctaButton}>Связаться с нами</button>
+                    <Link href="https://wa.me/+77073172855" target="_blank" rel="noopener noreferrer"> <button className={styles.ctaButton}>Связаться с нами</button></Link>
                 </section>
                 
                 <section className={styles.servicesBenefits}>
@@ -63,7 +64,7 @@ export default function VideoSurveillance() {
                         <strong>Закажите установку видеонаблюдения и получите надежную защиту вашего бизнеса и дома.</strong><br />
                         Обеспечьте безопасность с помощью передовых технологий уже сегодня!
                     </p>
-                    <button className={styles.ctaButton}>Оставить заявку</button>
+                    <Link href="https://wa.me/+77073172855" target="_blank" rel="noopener noreferrer"> <button className={styles.ctaButton}>Оставить заявку</button></Link>
                 </section>
             </main>
             <Footer />

@@ -1,22 +1,21 @@
-/* Service.module.css */
-
 .servicesContainer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Три колонки */
-  gap: 20px; /* Расстояние между карточками */
-  justify-items: center; /* Центрирование карточек по горизонтали */
+  grid-template-columns: repeat(2, 1fr); /* Две колонки по умолчанию */
+  gap: 50px; /* Расстояние между карточками */
+  justify-items: center; /* Центрирование карточек */
   margin-top: 20px;
-  max-width: 1450px; /* Максимальная ширина контейнера */
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 15px; /* Отступы по бокам */
 }
 
 .card {
-  width: 95%;
-  max-width: 700px; /* Максимальная ширина каждой карточки */
-  padding: 20px;
-  border-radius: 8px;
-  background-color: #f9f9f9;
+  width: 100%;
+  max-width: 1200px; /* Уменьшение ширины карточек */
+  padding: 0 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
   color: #333;
   text-decoration: none;
   overflow: hidden;
@@ -43,24 +42,57 @@
 }
 
 .card h3 {
-  font-size: 18px;
+  font-size: 1.2em;
   margin-bottom: 8px;
 }
 
 .card p {
-  font-size: 14px;
+  font-size: 0.9em;
   color: inherit;
 }
 
 /* Адаптивное поведение */
 @media (max-width: 1024px) {
   .servicesContainer {
-    grid-template-columns: repeat(2, 1fr); /* Две колонки на экранах среднего размера */
+    grid-template-columns: repeat(2, 1fr); /* Две колонки на средних экранах */
+    gap: 20px;
+  }
+
+  .card {
+    padding: 15px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .servicesContainer {
-    grid-template-columns: 1fr; /* Одна колонка на мобильных устройствах */
+    grid-template-columns: repeat(1, 1fr); /* Одна колонка на узких экранах */
+    gap: 15px;
+  }
+
+  .card h3 {
+    font-size: 1em;
+  }
+
+  .card p {
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 480px) {
+  .servicesContainer {
+    grid-template-columns: 1fr; /* Одна колонка на узких экранах */
+  }
+
+  .card {
+    max-width: 100%; /* Использование всей ширины экрана */
+    padding: 10px; /* Компактные отступы */
+  }
+
+  .card h3 {
+    font-size: 1em;
+  }
+
+  .card p {
+    font-size: 0.8em; /* Минимальный размер текста */
   }
 }

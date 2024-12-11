@@ -27,10 +27,9 @@
 }
 
 .priceTable th {
-    background:  #000000;
+    background: #000000;
     color: #fff;
     font-weight: 600;
-    text-align: left;
 }
 
 .priceTable td {
@@ -39,4 +38,59 @@
 
 .priceTable tr:nth-child(even) {
     background-color: #ffffff;
+}
+
+/* --- Оптимизация для мобильных устройств --- */
+@media (max-width: 768px) {
+    .priceListSection {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .priceTable {
+        font-size: 0.9rem;
+        box-shadow: none; /* Убираем тень для упрощения */
+    }
+
+    .priceTable th,
+    .priceTable td {
+        padding: 10px;
+    }
+
+    .priceTable th {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .priceTable td {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    /* Если таблица слишком большая для экрана, делаем горизонтальный скролл */
+    .priceTable {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .priceTable th,
+    .priceTable td {
+        padding: 8px;
+    }
+
+    .priceTable {
+        font-size: 0.8rem;
+    }
 }

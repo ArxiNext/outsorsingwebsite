@@ -7,7 +7,7 @@
     text-align: center;
     background: linear-gradient(to right, #434343, #000000);
     color: white;
-    height: 50vh;
+    height: 30vh;
     padding: 20px;
 }
 
@@ -17,16 +17,21 @@
     margin-bottom: 20px;
     animation: fadeIn 2s ease-in;
 }
-
+.subtitle{
+    text-align: center;
+}
 .hero p {
     font-size: 1em;
     margin-bottom: 15px;
 }
 
-.hero .subDescription {
+.hero .description {
     font-size: 1em;
     margin-bottom: 20px;
     color: #f8f8f8;
+}
+.finalCta{
+text-align: center;
 }
 
 .ctaButton {

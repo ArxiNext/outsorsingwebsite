@@ -21,7 +21,7 @@ export default function Contact() {
           </li>
           <li className={styles.contactItem}><Link href="https://wa.me/77073172855" target="_blank" rel="noopener noreferrer">
             <Image src="/icons/whatsapp.svg" alt="Телефон" className={styles.icon} width={30} height={30} />
-            <span>+7 (707) 317-28-55</span>
+            <span>Наш WhatsApp</span>
             </Link>
           </li>
         </ul>

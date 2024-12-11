@@ -1,6 +1,6 @@
-/* components/PricingList.module.css */
+/* Основной стиль */
 .pricing {
-    padding: 20px; /* Уменьшены отступы для компактности */
+    padding: 40px;
     background-color: #f8f8f8;
     text-align: center;
     border-radius: 10px;
@@ -12,33 +12,38 @@
     font-size: 2.2em;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #000000;
+    color: #333;
 }
 
 .pricingTable {
     width: 100%;
     border-collapse: collapse;
     margin: 0 auto;
-    font-size: 1em; /* Универсальный размер шрифта */
+    font-size: 1rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    table-layout: fixed; /* Фиксирует ширину столбцов */
 }
 
 .pricingTable th,
 .pricingTable td {
-    padding: 10px 15px;
+    padding: 15px;
     border: 1px solid #ddd;
     text-align: left;
+    vertical-align: middle; /* Выравнивание текста по центру строки */
+    word-wrap: break-word; /* Перенос длинных слов */
+    overflow-wrap: break-word; /* Совместимость с другими браузерами */
 }
 
 .pricingTable th {
     background-color: #000000;
     color: white;
-    font-size: 1em;
-    text-align: center; /* Центровка заголовков */
+    font-weight: 600;
+    text-align: center;
 }
 
 .pricingTable td {
     background-color: #fff;
-    font-size: 0.9em;
 }
 
 .pricingTable tr:nth-child(even) {
@@ -49,64 +54,51 @@
     background-color: #f1f1f1;
 }
 
-.pricingTable td:last-child {
-    font-weight: bold;
-    color: #000000;
-}
-
 /* Адаптивные стили */
 @media screen and (max-width: 768px) {
     .pricing {
-        padding: 15px;
+        padding: 20px;
     }
 
     .pricingTitle {
         font-size: 1.8em;
     }
 
-    .pricingTable th, 
+    .pricingTable th,
     .pricingTable td {
         padding: 10px;
-        font-size: 0.85em; /* Уменьшение размера текста для мобильных устройств */
+        font-size: 0.9rem;
     }
 
     .pricingTable {
-        font-size: 0.9em;
+        font-size: 0.9rem;
     }
 }
 
 @media screen and (max-width: 480px) {
+    .pricing {
+        padding: 15px;
+    }
+
     .pricingTitle {
         font-size: 1.5em;
     }
 
-    .pricingTable th, 
-    .pricingTable td {
-        padding: 8px;
-        font-size: 0.8em;
-    }
-
     .pricingTable {
         display: block;
-        border: none;
+        overflow-x: auto; /* Добавлена горизонтальная прокрутка */
+        white-space: nowrap; /* Сохранение таблицы в одну строку */
+    }
+
+    .pricingTable th,
+    .pricingTable td {
+        padding: 8px;
+        font-size: 0.85rem;
+        text-align: left;
     }
 
     .pricingTable tr {
-        display: flex;
-        flex-direction: column; /* Строки становятся колонками */
-        margin-bottom: 10px;
+        display: table-row; /* Сохранение строкового формата */
         border-bottom: 1px solid #ddd;
-    }
-
-    .pricingTable th {
-        text-align: left;
-        background-color: transparent;
-        color: #000;
-        padding: 5px 0;
-    }
-
-    .pricingTable td {
-        text-align: left;
-        padding: 5px 0;
     }
 }

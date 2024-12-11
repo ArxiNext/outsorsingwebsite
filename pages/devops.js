@@ -1,10 +1,11 @@
-import Header from '../components/Header';
+import Header from '../components/Header2';
 import Footer from '../components/Footer';
 import styles from '../styles/Development.module.css'
 import Head from 'next/head';
 import Image from 'next/image';
 import PriceList from '../components/PriceListDevop';
 import ProcessWorkDevop from '../components/ProcessWorkDevop';
+import Link from 'next/link';
 
 export default function Devops() {
     return (
@@ -22,7 +23,7 @@ export default function Devops() {
                     <strong>Ищете надежного партнера для создания сайта?</strong><br />
                     Мы предоставляем полный цикл услуг по разработке сайтов любой сложности — от корпоративных сайтов и лендингов до интернет-магазинов и веб-платформ. Наша команда опытных разработчиков и дизайнеров создаст сайт, который подчеркнет уникальность вашего бренда и поможет привлекать новых клиентов.
                 </p>
-                <button className={styles.ctaButton}>Связаться с нами</button>
+                <Link href="https://wa.me/+77073172855" target="_blank" rel="noopener noreferrer"> <button className={styles.ctaButton}>Заказать услугу </button></Link>
             </section>
             <section className={styles.servicesBenefits}>
     <h2 className={styles.subtitle}>Наши услуги и преимущества</h2>
@@ -77,7 +78,7 @@ export default function Devops() {
                     <strong>Сайт от нашей команды станет не просто веб-страницей, а мощным инструментом для роста вашего бизнеса.</strong><br />
                     Оставьте заявку, и мы обсудим, как можем помочь вам достичь ваших целей в интернете.
                 </p>
-                <button className={styles.ctaButton}>Оставить заявку</button>
+                <Link href="https://wa.me/+77073172855" target="_blank" rel="noopener noreferrer"> <button className={styles.ctaButton}>Оставить заявку</button></Link>
             </section>
             
         </main>

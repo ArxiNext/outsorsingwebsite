@@ -19,6 +19,7 @@
   
   .socialLink:hover {
     transform: scale(1.05); /* Немного увеличиваем при наведении */
+    color: #ff7e5f;;
   }
   
   .socialText {

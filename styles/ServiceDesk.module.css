@@ -4,10 +4,10 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 60px;
+    padding: 10px 15px;
     background: linear-gradient(to right, #434343, #000000);
     color: white;
-    height: 50vh; /* Высота экрана */
+    min-height: 35vh;
 }
 
 .hero h1 {
@@ -15,18 +15,35 @@
     font-weight: bold;
     margin-bottom: 20px;
     animation: fadeIn 2s ease-in;
+    line-height: 1.2;
 }
 
 .hero p {
     font-size: 1.2em;
     margin-bottom: 15px;
+    overflow-wrap: break-word;
 }
 
 .hero .subDescription {
     font-size: 1.1em;
     margin-bottom: 25px;
     color: #f8f8f8;
+    overflow-wrap: break-word;
 }
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 10px 15px;
+    }
+    .hero h1 {
+        font-size: 1.8em;
+        line-height: 1.2;
+    }
+    .hero p, .hero .subDescription {
+        font-size: 0.9em;
+    }
+}
+
 
 .ctaButton {
     background-color: #ff7e5f;

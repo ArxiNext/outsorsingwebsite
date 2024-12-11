@@ -15,11 +15,6 @@ const socialMedia = [
     url: 'https://telegram.com/in/your-profile',
     icon: '/icons/telegram.svg',
   },
-  {
-    name: 'Наш Whatsapp',
-    url: 'https://vk.com/your-profile',
-    icon: '/icons/whatsapp.svg',
-  },
 ];
 
 const SocialLinks = () => {

@@ -1,8 +1,8 @@
-import Header from '../components/Header';
+import Header from '../components/Header2';
 import Footer from '../components/Footer';
 import styles from '../styles/ServiceDesk.module.css';
 import PricingListServerDesk from '../components/PricingListServerDesk';
-
+import Link from 'next/link';
 import Head from 'next/head';
 import Image from 'next/image';
 import ServiceDeskServices from '../components/ServiceDeskServices';
@@ -31,6 +31,7 @@ export default function ServiceDesk() {
         Благодаря нашему Service Desk, ваши сотрудники могут сосредоточиться на задачах, которые важны для вашего роста и развития, 
         в то время как мы обеспечиваем стабильность IT-систем.
     </p>
+    <Link href="https://wa.me/+77073172855" target="_blank" rel="noopener noreferrer"> <button className={styles.ctaButton}>Оставить заявку</button></Link>
 </section>
 
 
@@ -75,7 +76,7 @@ export default function ServiceDesk() {
                         <strong>С нашим Service Desk ваша команда может сосредоточиться на важных задачах.</strong><br />
                         Мы берем на себя технические заботы, чтобы вы могли развивать ваш бизнес.
                     </p>
-                    <button className={styles.ctaButton}>Оставить заявку</button>
+                    <Link href="https://wa.me/+77073172855" target="_blank" rel="noopener noreferrer"> <button className={styles.ctaButton}>Оставить заявку</button></Link>
                 </section>
             </main>
             <Footer />

@@ -1,35 +1,32 @@
 /* Основные стили */
-body {
+body, html {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-html {
     scroll-behavior: smooth;
+    box-sizing: border-box; /* Упрощает управление размерами элементов */
 }
 
 /* Header */
 header {
     background-color: #333;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
 header nav p {
-    text-align: right;
     color: #f5f5f5;
+    text-align: right;
 }
 
 header nav ul {
     list-style: none;
+    display: flex;
+    gap: 15px;
     margin: 0;
     padding: 0;
-    display: flex;
-    gap: 15px; /* Используем gap для отступов */
 }
 
 header nav ul li a {
@@ -40,33 +37,29 @@ header nav ul li a {
 
 /* Hero Section */
 .hero {
-    margin: 0;
     padding: 20px 0;
     background: linear-gradient(to right, #434343, #000000);
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
     color: #f5f5f5;
     text-align: center;
-    height: 20vh; /* Немного увеличено для мобильных устройств */
+    height: 20vh;
     font-size: 24px;
 }
 
 /* Main Content */
 main {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 .textContainer {
+    margin: 0 160px;
+    max-width: 1600px;
     width: 100%;
-    padding: 0 20px; /* Универсальные отступы для всех устройств */
-    box-sizing: border-box;
 }
 
 .textContainer p {
     text-align: justify;
-    margin-bottom: 20px;
     line-height: 1.6;
 }
 
@@ -94,75 +87,43 @@ footer {
 }
 
 /* BigLexa Section */
-.bigLexa {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
-}
-
-.textLexa {
-    flex: 1;
-    padding-right: 20px;
-}
-
-.imageContainer {
-    flex: 0 0 300px;
-}
-
-.imageContainer img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
 
 /* Horizontal Rule */
 hr {
     margin: 50px auto;
     border: none;
     border-top: 2px solid #000;
-    width: 80%; /* Ограничиваем ширину линии */
+    width: 80%;
 }
 
 /* Адаптивность */
 @media (max-width: 768px) {
     .hero {
-        height: auto; /* Автоматическая высота для мобильных */
+        height: auto;
         font-size: 20px;
         padding: 20px;
     }
 
-    .textContainer p {
+    .textContainer {
         padding: 0 10px;
     }
 
     .bigLexa {
-        flex-direction: column; /* Секция становится вертикальной */
-        padding: 20px;
         gap: 10px;
     }
 
-    .imageContainer {
-        flex: none;
-        width: 100%; /* Картинка занимает всю ширину */
-        text-align: center;
-    }
-
     .imageContainer img {
-        max-width: 90%; /* Ограничиваем ширину картинки */
-        margin: 0 auto;
+        max-width: 90%;
     }
 
     hr {
-        margin: 30px auto;
-        width: 90%; /* Линия шире на мобильных устройствах */
+        width: 90%;
     }
 }
 
 @media (max-width: 480px) {
     header nav ul {
-        flex-direction: column; /* Меню становится вертикальным */
+        flex-direction: column;
         gap: 10px;
     }
 
@@ -171,13 +132,8 @@ hr {
         padding: 15px;
     }
 
-    .bigLexa {
-        padding: 10px;
-    }
-
     .textLexa {
-        padding-right: 0;
-        text-align: center; /* Текст выравнивается по центру */
+        text-align: center;
     }
 
     footer {
